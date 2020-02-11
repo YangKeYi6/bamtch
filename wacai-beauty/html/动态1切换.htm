@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        .nav {
+            width: 400px;
+            height: 50px;
+            background-color: red;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            margin-top: 100ox;
+        }
+        
+        .nav ul li {
+            float: left;
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            line-height: 50px;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        .nav .nav-current {
+            background-color: purple;
+            color: white;
+        }
+        
+        .content {
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+            margin: 0 auto;
+        }
+        
+        .content ul {
+            width: 400px;
+            height: 400px;
+            background-color: black;
+        }
+        
+        .content ul li {
+            width: 400px;
+            height: 400px;
+            background-color: purple;
+            display: none;
+            font-size: 200px;
+            text-align: center;
+            line-height: 400px;
+        }
+        
+        .content .show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav" id="nav">
+        <ul>
+            <li class="nav-current">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+        </ul>
+    </div>
+    <div class="content" id="content">
+        <ul>
+            <li class="show">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+        </ul>
+    </div>
+</body>
+
+</html>
+
+<script>
+    let navList = document.getElementById("nav").children[0].children;
+    console.log(navList);
+    let contentList = document.getElementById("content").firstElementChild.children;
+    console.log(contentList);
+
+    for (let i = 0; i < navList.length; i++) {
+        navList[i].onclick = function() {
+            navList[i].setAttribute("index", i)
+            let index = navList[i].getAttribute("index");
+            console.log(index);
+            for (let j = 0; j < navList.length; j++) {
+                navList[j].removeAttribute("class");
+            }
+            this.className = "nav-current";
+            for (let k = 0; k < contentList.length; k++) {
+                contentList[k].removeAttribute("class");
+            }
+            contentList[index].className = "show";
+        }
+    }
+</script>

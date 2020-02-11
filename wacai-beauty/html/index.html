@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/finance.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/yue.css">
+</head>
+
+<body>
+    <!--左侧导航-->
+    <div class="left-nav">
+        <div class="head">
+            <div class="head-image"></div>
+            <div class="head-word">挖财</div>
+        </div>
+        <div class="box" id="leftbox">
+            <ul class="box-licai">
+                <li class="" id="left-finance">
+                    <span class="box-licai-icon"></span>
+                    <span class="box-licai-word">理财服务</span>
+                </li>
+                <li class="left-yue box-nav-show" id="leftyue">
+                    <span class="box-licai-icon second"></span>
+                    <span class="box-licai-word">余额计算</span>
+                </li>
+                <li>
+                    <span class="box-licai-icon third"></span>
+                    <span class="box-licai-word">支付方式</span>
+                </li>
+                <li>
+                    <span class="box-licai-icon forth"></span>
+                    <span class="box-licai-word">记账</span>
+                </li>
+                <li>
+                    <span class="box-licai-icon fifth"></span>
+                    <span class="box-licai-word">筛选账单</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--右侧内容-->
+    <div class="right" id="">
+        <div class="right-card" id="rightbox">
+            <ul>
+                <!--理财服务-->
+                <li class="" id="finance">
+                    <div class="title">
+                        <span class="title-pic"></span>
+                        <div class="title-word">理财服务</div>
+                    </div>
+                    <form action="/finance" method="post">
+                        <div class="finance-word">请输入您的理财金额：</div>
+                        <input onblur="financeinputamount()" id="filosefocus" type="text" name="amount" placeholder="理财金额" class="right-card-finance   financeinput">
+                        <div class="finance-word">请选择您的理财途径：</div>
+                        <select name="type" id="" class="form-select" class="finance-form-select" style="width: 300px;
+                        height: 50px;border-radius: 50px;
+    font-size: 30px;
+      font-family: kaiti;
+    /*color: wheat;*/
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;">
+                            <option value="yuebao">余额宝</option>
+                            <option value="jd">京东小金库</option>
+                        </select>
+                        <div class="finance-word">请输入您预计得存储时间（天）：</div>
+                        <input onblur="finance_input_day()" id="finance-input-day" type="text" name="days" placeholder="理财天数" class="right-card-finance">
+                        <button type="submit" class="finance-form-botton right-card-finance">理财</button>
+                    </form>
+                    <!-- <li class="toyue"></li> -->
+                    <!-- <a href="" class="toyue"></a> -->
+                    <div class="toyue" id="to-yue" onclick="to_yue()"></div>
+                </li>
+                <!--余额计算-->
+                <li id="yue" class="yue show">
+                    <div class="title">
+                        <div class="title-pic"></div>
+                        <div class="title-word">余额计算</div>
+                    </div>
+                    <form action="/accounting" method="post">
+                        <span>输入现金：</span>
+                        <div class="yue-cash-position">
+                            <span class="yue-cash-icon"></span>
+                            <input type="text" name="" id="" placeholder="现金" class="yue-box-icon">
+                        </div>
+                        <div class="yue-income-position">
+                            <span class="yue-income-icon"></span>
+                            <input type="text" name="income" placeholder="收入" class="yue-box-icon">
+                        </div>
+                        <div class="yue-rent-position">
+                            <span class="yue-rent-icon"></span>
+                            <input type="text" name="rent" placeholder="房租" class="yue-box-icon">
+                        </div>
+                        <div class="yue-charges-position">
+                            <span class="yue-charges-icon"></span>
+                            <input type="text" name="charges" placeholder="水电" class="yue-box-icon">
+                        </div>
+                        <div class="yue-eat-position">
+                            <span class="yue-eat-icon"></span>
+                            <input type="text" name="eat" placeholder="吃喝" class="yue-box-icon">
+                        </div>
+                        <div class="yue-treat-position">
+                            <span class="yue-treat-icon"></span>
+                            <input type="text" name="treat" placeholder="招待" class="yue-box-icon">
+                        </div>
+                        <div class="yue-ktv-position">
+                            <span class="yue-ktv-icon"></span>
+                            <input type="text" name="ktv" placeholder="唱K" class="yue-box-icon">
+                        </div>
+                        <button type="submit">ok</button class="yue-botton" style=" width: 270px;
+                            height: 40px;
+                            background-color: blue;
+                            border-radius: 10px;
+                            position: relative;
+                            top: -250px;
+                            font-size:20px
+                            "></button>
+                    </form>
+                    <a class="backlicai" onclick="backlicai()"></a>
+                    <a class="topayway"></a>
+                </li>
+                <li>
+                    <div class="title">
+                        <span class="title-pic"></span>
+                        <div class="title-word">支付方式</div>
+                    </div>
+                    <form action="/pay" method="post">
+                        <input type="text" placeholder="支付金额" name="amount">
+                        <div>
+                            <select name="payType" id="">
+                                    <option value="huabei">支付宝花呗</option>
+                                    <option value="baitiao">京东白条</option>
+                                    <option value="creditCard">信用卡</option>
+                                </select>
+                        </div>
+                        <div>
+                            <input type="text" name="stagesCount" placeholder="分期数">
+                        </div>
+                        <div>
+                            <button type="submit">支付</button>
+                        </div>
+                    </form>
+                </li>
+                <li>
+                    <div class="title">
+                        <span class="title-pic"></span>
+                        <div class="title-word">记账</div>
+                    </div>
+                    <form action="/record" method="post">
+                        <div>
+                            <input type="text" name="creatTime" placeholder="发生日期，如2019-01-10">
+                        </div>
+                        <div>
+                            <input type="text" name="amount" placeholder="金额">
+                        </div>
+                        <div>
+                            <select name="type" id="">
+                                    <option value="收入">收入</option>
+                                    <option value="支出">支出</option>
+                                </select>
+                        </div>
+                        <div>
+                            <select name="category" id="">
+                                    <option value="房租">房租</option>
+                                    <option value="水电">水电</option>
+                                    <option value="吃饭">吃饭</option>
+                                    <option value="请客吃饭">请客吃饭</option>
+                                    <option value="ktv">ktv</option>
+                                </select>
+                        </div>
+                        <div>
+                            <button type="submit">记一笔</button>
+                        </div>
+                    </form>
+                </li>
+                <li>
+
+                    <div class="title">
+                        <span class="title-pic"></span>
+                        <div class="title-word">筛选账单</div>
+                    </div>
+                    <form action="/search" method="post">
+                        <div>
+                            <input type="text" name="amount" placeholder="金额">
+                        </div>
+                        <div>
+                            <button type="submit">过滤</button>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="../js/index.js"></script>
+<script src="../js/finance.js"></script>
+<script src="../js/yue.js"></script>

@@ -1,0 +1,83 @@
+input {
+    outline: none;
+}
+
+.right .right-card .right-card-finance {
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 30px;
+    font-family: kaiti;
+    /*color: wheat;*/
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.right-card .finance-form-botton {
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 30px;
+    /*  font-family: kaiti;*/
+    /*color: wheat;*/
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: dodgerblue;
+}
+
+.right-card .finance-form-select {
+    width: 300px;
+    height: 50px;
+    display: block;
+    font-size: 50px;
+    font-family: kaiti;
+}
+
+select {
+    /*重置Chrome和Firefox的select边框样式*/
+    border: 1px solid #000;
+    /*清除默认的select选择框样式*/
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.right-card .finance-word {
+    font-family: kaiti;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.selected_search {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+}
+
+.selected_search select {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.right-card .toyue {
+    width: 100px;
+    height: 100px;
+    /* border: 2px solid red; */
+    background: url(../images/toyue.png) no-repeat center;
+    float: right;
+    background-size: contain;
+    cursor: pointer;
+    z-index: 3;
+    position: relative;
+    right: 250px;
+    bottom: 190px;
+    display: block;
+}
+
+.right-card .toyue:hover {
+    background-color: yellow;
+    border-radius: 50px;
+}

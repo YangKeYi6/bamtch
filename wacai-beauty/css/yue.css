@@ -1,0 +1,162 @@
+.right-card .yue form {
+    position: absolute;
+}
+
+form .yue-cash-position {
+    position: relative;
+    top: -30px;
+}
+
+form .yue-income-position {
+    position: relative;
+    top: -70px;
+}
+
+form .yue-cash-icon {
+    background: url(../images/cash.png) no-repeat center;
+    background-size: contain;
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: 55px;
+    left: 15px;
+}
+
+form .yue-income-icon {
+    background: url(../images/incom.png) no-repeat center;
+    background-size: contain;
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: 55px;
+    left: 15px;
+}
+
+form .yue-box-icon {
+    display: block;
+    width: 200px;
+    height: 40px;
+    padding-left: 60px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+form .yue-rent-icon {
+    background: url(../images/rent.png) no-repeat center;
+    background-size: contain;
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: 55px;
+    left: 15px;
+}
+
+form .yue-rent-position {
+    position: relative;
+    top: -110px;
+}
+
+form .yue-charges-icon {
+    background: url(../images/charges.png) no-repeat center;
+    background-size: contain;
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: 55px;
+    left: 15px;
+}
+
+form .yue-charges-position {
+    position: relative;
+    top: -150px;
+}
+
+form .yue-eat-icon {
+    background: url(../images/eat.png) no-repeat center;
+    background-size: contain;
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: 55px;
+    left: 15px;
+}
+
+form .yue-eat-position {
+    position: relative;
+    top: -190px;
+}
+
+form .yue-treat-icon {
+    background: url(../images/treat.png) no-repeat center;
+    background-size: contain;
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: 55px;
+    left: 15px;
+}
+
+form .yue-treat-position {
+    position: relative;
+    top: -230px;
+}
+
+form .yue-ktv-icon {
+    background: url(../images/ktv.png) no-repeat center;
+    background-size: contain;
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: 55px;
+    left: 15px;
+}
+
+form .yue-ktv-position {
+    position: relative;
+    top: -270px;
+}
+
+
+/*form button.yue-botton {
+    width: 270px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 10px;
+    position: relative;
+    top: -250px;
+}*/
+
+.yue .backlicai {
+    background: url(../images/toleft.png) no-repeat center;
+    width: 80px;
+    height: 80px;
+    float: right;
+    background-size: contain;
+    cursor: pointer;
+    z-index: 3;
+    position: relative;
+    top: 230px;
+    right: 225px;
+    display: block;
+}
+
+.yue .topayway {
+    background: url(../images/toright.png) no-repeat center;
+    width: 90px;
+    height: 90px;
+    float: right;
+    background-size: contain;
+    cursor: pointer;
+    z-index: 3;
+    position: relative;
+    top: 228px;
+    right: 10px;
+    display: block;
+}

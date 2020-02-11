@@ -1,0 +1,152 @@
+ /*清除原有得设置*/
+ 
+ * {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     text-decoration: none;
+ }
+ /*蛇者bdy，html使得背景充满整个屏幕*/
+ 
+ ul li {
+     list-style: none;
+ }
+ 
+ body,
+ html {
+     background-color: white;
+     height: 100%;
+     z-index: 1;
+ }
+ /*左侧导航*/
+ 
+ .left-nav {
+     height: 100%;
+     width: 20%;
+     background-color: yellow;
+ }
+ /*左侧导航下的挖财头部*/
+ 
+ .left-nav .head {
+     border-bottom: 2px solid black;
+ }
+ /*左侧导航挖财图片*/
+ 
+ .left-nav .head .head-image {
+     background: url(/images/wacai.png) no-repeat center;
+     height: 30px;
+     width: 30px;
+     background-size: contain;
+     margin: 20px 30px 20px 20px;
+     float: left;
+ }
+ /*左侧导航挖财文字*/
+ 
+ .left-nav .head .head-word {
+     line-height: 30px;
+     height: 30px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     font-size: 30px;
+     font-family: Kaiti;
+     background-size: contain;
+     background-color: white;
+ }
+ /*左侧身体盒子*/
+ /*li格式设定*/
+ 
+ .left-nav {
+     border-right: 2px solid black;
+ }
+ 
+ .left-nav ul li {
+     width: 100%;
+     height: 110%;
+     padding: 20px 0 20px 30px;
+     cursor: pointer;
+     border-radius: 230px;
+ }
+ 
+ .left-nav .box {
+     margin: 50px 30px 20px 20px;
+ }
+ 
+ .box .box-licai .box-nav-show {
+     background-color: white;
+     width: 50%;
+ }
+ /* 左侧身体盒子理财图片*/
+ 
+ .left-nav .box .box-licai-icon {
+     background: url(../images/licai.jpg) no-repeat center;
+     position: absolute;
+     width: 20px;
+     height: 20px;
+     background-size: contain;
+ }
+ /*理财服务文字*/
+ 
+ .left-nav .box .box-licai-word {
+     padding-left: 30px;
+     font-weight: bolder;
+     font-family: kaiti;
+     font-size: 20px;
+ }
+ 
+ .left-nav .box .second {
+     background: url(../images/yue.jpg) no-repeat center;
+     background-size: contain;
+ }
+ 
+ .left-nav .box .third {
+     background: url(../images/payway.jpg) no-repeat center;
+     background-size: contain;
+ }
+ 
+ .left-nav .box .forth {
+     background: url(../images/jizhang.jpg) no-repeat center;
+     background-size: contain;
+ }
+ 
+ .right-card {
+     width: 960px;
+     height: 560px;
+     background: pink;
+     position: absolute;
+     top: 50%;
+     margin-top: -300px;
+     margin-left: -340px;
+     left: 50%;
+     padding: 20px 20px 20px 20px;
+ }
+ 
+ .right .right-card ul {
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+ }
+ 
+ .right .right-card ul li {
+     width: 960px;
+     height: 560px;
+     /* background-color: green; */
+     position: absolute;
+     display: none;
+ }
+ 
+ .right .right-card .show {
+     display: block;
+ }
+ 
+ .right-card .title-word {
+     background-color: white;
+     width: 100px;
+     height: 40px;
+     line-height: 40px;
+     text-align: center;
+     font-family: kaiti;
+     position: absolute;
+     top: -50px;
+     border-radius: 50px;
+     font-weight: bolder;
+ }

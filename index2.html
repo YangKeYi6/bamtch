@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QQ注册</title>
+    <link rel="stylesheet" href="index2.css">
+</head>
+
+<body>
+    <!-- 左边部分 -->
+    <section class="left">
+        <a class="qq-link">QQ</a>
+    </section>
+    <!-- 右边部分 -->
+    <section class="right">
+        <!-- 顶部导航 -->
+        <nav class="clearFix">
+            <ul>
+                <li>
+                    <a href="#">意见反馈</a>
+                </li>
+                <li class="zhongwen">
+                    简体中文
+                    <img src="https://4.url.cn/zc/v3/img/down.png" alt="">
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://4.url.cn/zc/v3/img/mail-entry.png" alt=""> 邮箱账号
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="lianghao">
+                        <img src="https://4.url.cn/zc/v3/img/logo3.png" alt="" class="lianghao-img"> QQ靓号
+                    </a>
+                </li>
+
+
+
+            </ul>
+        </nav>
+        <!-- 主体部分 -->
+        <main class="main">
+            <div class="welcome">欢迎注册QQ</div>
+            <div class="free"><a href="#">免费靓号</a></div>
+            <div class="happy">每一天，乐在沟通</div>
+            <form action="#">
+                <div class="input-outer"><input type="text" placeholder="昵称" onblur="handlerBlurNicknName()" class="nickName"></div>
+                <div class="input-outer"><input type="password" placeholder="密码" onblur="handlerBlurPassword()" class="password"></div>
+                <div class="clearFix">
+                    <div class="input-outer nation-outer"><input type="text" placeholder="+86" class="nation"></div>
+                    <div class="input-outer phone-outer"><input type="text" placeholder="手机号码" class="phone" onblur="phoneHandler()" id="username"></div>
+                </div>
+                <div class="find-password">可以通过该手机号找回密码</div>
+                <button class="submit" onclick="register(event)">立即注册</button>
+                <div class="agree">
+                    <input type="checkbox" id="agree">
+                    <label for="agree">我已阅读并同意相关服务条款和隐私政策</label>
+                    <img src="https://4.url.cn/zc/v3/img/down.png" alt="">
+                </div>
+                <input type="text">
+            </form>
+        </main>
+        <footer>
+            Copyright © 1998-2019Tencent All Rights Reserved
+        </footer>
+    </section>
+</body>
+
+</html>
+<script src="index.js"></script>
